@@ -9,4 +9,5 @@ function nowServing(katzDeliLine) {
   }
 
   var person = katzDeliLine[0];
+  katzDeliLine = katzDeliLine.slice(1);
 }
