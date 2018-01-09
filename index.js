@@ -16,15 +16,15 @@ function nowServing(deliLine) {
   return `Currently serving ${person}.`;
 }
 
-function currentLine(katzDeliLine) {
-  if (katzDeliLine.length === 0) {
+function currentLine(deliLine) {
+  if (deliLine.length === 0) {
     return "The line is currently empty.";
   }
 
   var names = [];
 
-  for (var i = 0; i < katzDeliLine.length; i++) {
-    var name = katzDeliLine[i];
+  for (var i = 0; i < deliLine.length; i++) {
+    var name = deliLine[i];
     var idx = i + 1;
     names.push(idx + ". " + name);
   }
