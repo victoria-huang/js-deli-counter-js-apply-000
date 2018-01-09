@@ -1,4 +1,4 @@
-var katzDeli = [];
+var katzDeliLine = [];
 
 function takeANumber(katzDeliLine, name) {
   katzDeliLine.push(name);
@@ -12,7 +12,7 @@ function nowServing(katzDeliLine) {
   }
 
   var person = katzDeliLine[0];
-  katzDeli = katzDeli.slice(1);
+  katzDeliLine = katzDeliLine.slice(1);
   return `Currently serving ${person}.`;
 }
 
