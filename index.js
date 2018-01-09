@@ -1,13 +1,13 @@
 var katzDeliLine = [];
 
-function takeANumber(katzDeli, name) {
-  katzDeli.push(name);
-  var placeInLine = katzDeli.indexOf(name) + 1;
+function takeANumber(deliLine, name) {
+  deliLine.push(name);
+  var placeInLine = deliLine.indexOf(name) + 1;
   return "Welcome, " + name + ". You are number " + placeInLine + " in line.";
 }
 
-function nowServing(katzDeliLine) {
-  if (katzDeliLine.length === 0) {
+function nowServing(deliLine) {
+  if (deliLine.length === 0) {
     return "There is nobody waiting to be served!";
   }
 
