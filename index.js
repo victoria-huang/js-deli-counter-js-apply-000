@@ -12,7 +12,7 @@ function nowServing(deliLine) {
   }
 
   var person = deliLine[0];
-  katzDeliLine = deliLine.slice(1);
+  deliLine.splice(0, 1);
   return `Currently serving ${person}.`;
 }
 
