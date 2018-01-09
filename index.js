@@ -3,4 +3,10 @@ function takeANumber(katzDeliLine, name) {
   return "Welcome, " + name + ". You are number " + placeInLine + " in line.";
 }
 
-function nowServing
+function nowServing(katzDeliLine) {
+  if (katzDeliLine.length === 0) {
+    return "The line is currently empty.";
+  }
+
+  var person = katzDeliLine[0];
+}
