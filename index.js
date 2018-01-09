@@ -1,5 +1,3 @@
-var katzDeliLine = [];
-
 function takeANumber(deliLine, name) {
   deliLine.push(name);
   var placeInLine = deliLine.indexOf(name) + 1;
